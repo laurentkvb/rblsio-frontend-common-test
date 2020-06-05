@@ -1,6 +1,6 @@
 {
   "name": "rblsio-frontend-common-test",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "./index.cjs.js",
   "module": "./index.esm.js",
   "browser": "./index.umd.js",
