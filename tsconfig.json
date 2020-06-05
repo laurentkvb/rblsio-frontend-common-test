@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "./dist",
-    "outDir": "./dist",
+    "declarationDir": "./",
+    "outDir": "./",
     "module": "es6",
     "noImplicitAny": true,
     "target": "es5",
