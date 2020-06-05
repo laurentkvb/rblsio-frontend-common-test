@@ -5,10 +5,12 @@
   "module": "dist/how-long-till-lunch.esm.js",
   "browser": "dist/how-long-till-lunch.umd.js",
   "dependencies": {
-    "ms": "^2.0.0"
+    "ms": "^2.0.0",
+    "react": "^16.13.1"
   },
   "devDependencies": {
     "@types/ms": "^0.7.30",
+    "@types/react": "^16.9.35",
     "rollup": "^1.0.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
