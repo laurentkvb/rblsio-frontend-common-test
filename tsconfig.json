@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "./lib",
-    "outDir": "./lib",
+    "declarationDir": "./dist",
+    "outDir": "./dist",
     "module": "es6",
     "noImplicitAny": true,
     "target": "es5",
@@ -62,5 +62,5 @@
     // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
   },
   "include": ["src"],
-  "exclude": ["node_modules", "build", "dist", "example", "rollup.config.js"]
+  "exclude": ["node_modules", "build", "dist", "lib", "example", "rollup.config.js"]
 }
