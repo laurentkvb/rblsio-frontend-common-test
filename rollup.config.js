@@ -12,7 +12,7 @@ export default {
 	},
 	plugins: [
 		ts({
-		}, 			typescript(),
-		)
+		},
+			typescript()),
 	]
 };
