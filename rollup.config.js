@@ -5,7 +5,7 @@ import typescript from '@rollup/plugin-typescript';
 import ts from "@wessberg/rollup-plugin-ts";
 
 export default {
-	input: 'src/main.ts',
+	input: 'src/index.ts',
 	output: {
 		dir: './dist',
 		format: 'cjs'
