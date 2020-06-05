@@ -2,6 +2,3 @@
 node_modules
 dist
 .idea
-
-index.d.ts
-index.js
