@@ -10,7 +10,7 @@ import resolve from '@rollup/plugin-node-resolve';
 export default {
 	input: 'src/index.ts',
 	output: {
-		dir: './lib',
+		dir: './dist',
 		format: 'cjs'
 	},
 	plugins: [
