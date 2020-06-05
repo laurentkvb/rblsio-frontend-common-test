@@ -22,7 +22,8 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "ts-node test/test.ts",
+    "test-original": "ts-node test/test.ts",
+    "test": "echo \"No test specified\"",
     "pretest": "npm run build"
   },
   "files": [
