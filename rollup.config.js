@@ -3,6 +3,9 @@
 // import pkg from './package.json';
 import typescript from '@rollup/plugin-typescript';
 import ts from "@wessberg/rollup-plugin-ts";
+import commonjs from '@rollup/plugin-commonjs';
+import resolve from '@rollup/plugin-node-resolve';
+
 
 export default {
 	input: 'src/index.ts',
@@ -11,8 +14,12 @@ export default {
 		format: 'cjs'
 	},
 	plugins: [
-		ts({
-		},
-			typescript()),
+		ts({},
+			typescript(),
+			commonjs(),
+			resolve(),),
+		typescript(),
+		commonjs(),
+		resolve(),
 	]
 };

@@ -6,10 +6,12 @@
   "browser": "./lib/index.umd.js",
   "types": "./lib/index.d.ts",
   "dependencies": {
+    "@rollup/plugin-commonjs": "^12.0.0",
     "ms": "^2.0.0",
     "react": "^16.13.1"
   },
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^8.0.0",
     "@rollup/plugin-typescript": "^4.1.2",
     "@types/ms": "^0.7.30",
     "@types/react": "^16.9.35",
