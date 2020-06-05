@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "./",
-    "outDir": "./",
+    "outDir": "./lib",
     "module": "es6",
     "noImplicitAny": true,
     "target": "es5",
