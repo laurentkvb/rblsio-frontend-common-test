@@ -1,5 +1,5 @@
 {
-  "name": "rollup-starter-lib",
+  "name": "rblsio-frontend-common-test",
   "version": "1.0.0",
   "main": "dist/how-long-till-lunch.cjs.js",
   "module": "dist/how-long-till-lunch.esm.js",
