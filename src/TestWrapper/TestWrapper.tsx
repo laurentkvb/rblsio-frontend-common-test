@@ -20,8 +20,6 @@ import React from "react";
  * @param props are optional parameters to change properties of the parents
  * CSS properties.
  */
-const ColumnsWrapper = () => (
+export const TestWrapper = () => (
     <div><h1>Display columns wrapper over here</h1></div>
 );
-
-export default ColumnsWrapper;
