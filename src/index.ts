@@ -1,7 +1,7 @@
 import { TestWrapper } from "./TestWrapper/TestWrapper";
-import Box from "./Box/Box";
+import Box1 from "./Box1/Box1";
 import KolommenWrapper  from "./KolommenWrapper/KolommenWrapper";
 
 export const greet = (name = "sir") => console.log(`Hello, world! ${name}`)
 
-export { TestWrapper,KolommenWrapper, Box }
+export { TestWrapper,KolommenWrapper, Box1 }

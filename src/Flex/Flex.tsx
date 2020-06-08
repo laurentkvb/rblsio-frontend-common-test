@@ -6,6 +6,6 @@ interface ExtendedFlexProps extends FlexProps {
   onClick?: Function;
 }
 
-const Flex = (props: ExtendedFlexProps) => <FlexComponent {...props} />;
+const Flex = (props: ExtendedFlexProps) => <FlexComponent {...props} >{props.children}</FlexComponent>;
 
 export default Flex;
