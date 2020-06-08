@@ -1,15 +1,15 @@
 {
   "name": "rblsio-frontend-common-test",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "main": "./build/index.js",
   "module": "./build/index.esm.js",
   "browser": "./build/index.umd.js",
   "types": "./build/index.d.ts",
   "dependencies": {
     "@rollup/plugin-commonjs": "^12.0.0",
+    "ms": "^2.0.0",
     "styled-components": "^5.0.1",
-    "styled-system": "^5.1.5",
-    "ms": "^2.0.0"
+    "styled-system": "^5.1.5"
   },
   "peerDependencies": {
     "react": ">= 16.8.0",
