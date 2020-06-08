@@ -14,13 +14,11 @@ export default {
 		format: 'cjs'
 	},
 	plugins: [
-		ts({},
+		ts({}),
 		typescript(),
-		commonjs(),
-		resolve(),
-		),
-		typescript(),
-		commonjs(),
+		commonjs({
+			include: 'node_modules/**',  // Default: undefined
+		}),
 		resolve({}),
 	]
 };
