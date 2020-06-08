@@ -20,7 +20,6 @@ export default {
 			include: [ "./index.js", "node_modules/**" ], // Default: undefined
 			// if true then uses of `global` won't be dealt with by this plugin
 			ignoreGlobal: false, // Default: false
-
 			// if false then skip sourceMap generation for CommonJS modules
 			sourceMap: false // Default: true
 		}),

@@ -7,6 +7,7 @@ interface Props extends SystemProps {
   fullWidth?: boolean;
   backgroundColor?: string | string[];
   debugging?: boolean;
+  outerColumns: string | string[];
 }
 
 /**
@@ -22,6 +23,14 @@ interface Props extends SystemProps {
 const KolommenWrapper = ({ children,
   fullWidth = false,
   debugging = false,
+  outerColumns = ["0px",
+      "calc(100% - 20px)", // '320px' , outer columns (10px each, hench 20px)
+      "calc(100% - 32px)", // '400px' , outer columns (16px each, hench 32px)
+      "calc(100% - 48px)", // '480px' , outer columns (24px each, hench 48px)
+      "calc(100% - 96px)", // '960px' , outer columns (48px each, hench 96px)
+      "calc(100% - 96px)", // '1280px', outer columns (48px each, hench 96px)
+      "1280px" // starting at '1280px' and higher
+  ],
   backgroundColor = "white",
   ...props } : Props) => (
     <Flex
@@ -40,14 +49,7 @@ const KolommenWrapper = ({ children,
 
         <Flex
           width={fullWidth ? "100%"
-            : ["0px",
-              "calc(100% - 20px)", // '320px' , outer columns (10px each, hench 20px)
-              "calc(100% - 32px)", // '400px' , outer columns (16px each, hench 32px)
-              "calc(100% - 48px)", // '480px' , outer columns (24px each, hench 48px)
-              "calc(100% - 96px)", // '960px' , outer columns (48px each, hench 96px)
-              "calc(100% - 96px)", // '1280px', outer columns (48px each, hench 96px)
-              "1280px" // starting at '1280px' and higher
-            ]}
+            : outerColumns}
           height="100%"
           backgroundColor="white"
           flexDirection="column"
