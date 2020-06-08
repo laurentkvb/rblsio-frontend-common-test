@@ -10,16 +10,17 @@ import resolve from '@rollup/plugin-node-resolve';
 export default {
 	input: 'src/index.ts',
 	output: {
-		dir: './dist',
+		dir: './build',
 		format: 'cjs'
 	},
 	plugins: [
 		ts({},
-			typescript(),
-			commonjs(),
-			resolve(),),
 		typescript(),
 		commonjs(),
 		resolve(),
+		),
+		typescript(),
+		commonjs(),
+		resolve({}),
 	]
 };
