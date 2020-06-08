@@ -26,6 +26,8 @@
     "@types/styled-system__css": "^5.0.4",
     "@wessberg/rollup-plugin-ts": "^1.2.24",
     "react": "^16.8.7",
+    "react-dom": "^16.8.6",
+    "@types/react-dom": "^16.0.9",
     "rollup": "^1.0.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
