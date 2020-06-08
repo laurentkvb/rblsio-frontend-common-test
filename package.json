@@ -37,6 +37,7 @@
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-sass": "^1.2.2",
     "rollup-plugin-scss": "^2.5.0",
     "sass-loader": "^8.0.2",
     "ts-node": "^7.0.1",

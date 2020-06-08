@@ -7,7 +7,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
-import scss from 'rollup-plugin-scss'
+import sass from "rollup-plugin-sass";
 
 
 export default {
@@ -15,12 +15,13 @@ export default {
 	output: {
 		dir: './build',
 		format: 'cjs',
+		sourcemap: true
 	},
+	preserveModules: true,
 	plugins: [
-		peerDepsExternal(),
-		scss(),
 		ts({}),
-		typescript(),
+		peerDepsExternal(),
+		resolve({}),
 		commonjs({
 			include: [ "./index.js", "node_modules/**" ], // Default: undefined
 			// if true then uses of `global` won't be dealt with by this plugin
@@ -28,6 +29,9 @@ export default {
 			// if false then skip sourceMap generation for CommonJS modules
 			sourceMap: false // Default: true
 		}),
-		resolve({}),
+		typescript(),
+		sass({
+			insert: true
+		}),
 	]
 };
