@@ -7,14 +7,19 @@
   "types": "./build/index.d.ts",
   "dependencies": {
     "@rollup/plugin-commonjs": "^12.0.0",
+    "@types/styled-components": "^5.1.0",
     "ms": "^2.0.0",
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "styled-components": "^5.1.1",
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^8.0.0",
     "@rollup/plugin-typescript": "^4.1.2",
     "@types/ms": "^0.7.30",
     "@types/react": "^16.9.35",
+    "@types/styled-system": "^5.1.9",
+    "@types/styled-system__css": "^5.0.11",
     "@wessberg/rollup-plugin-ts": "^1.2.24",
     "rollup": "^1.0.0",
     "rollup-plugin-commonjs": "^9.2.0",
