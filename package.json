@@ -19,16 +19,26 @@
     "react-is": ">= 16.8.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.2",
     "@rollup/plugin-node-resolve": "^8.0.0",
     "@rollup/plugin-typescript": "^4.1.2",
+    "@storybook/react": "^5.3.19",
+    "@types/jest": "^24.0.24",
     "@types/ms": "^0.7.30",
+    "@types/react": "^16.9.12",
     "@types/styled-components": "^4.4.3",
     "@types/styled-system": "^5.1.6",
     "@types/styled-system__css": "^5.0.4",
     "@wessberg/rollup-plugin-ts": "^1.2.24",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
+    "node-sass": "^4.14.1",
     "rollup": "^1.0.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-scss": "^2.5.0",
+    "sass-loader": "^8.0.2",
     "ts-node": "^7.0.1",
     "tslib": "^2.0.0",
     "typescript": "^3.2.2"
@@ -38,7 +48,10 @@
     "dev": "rollup -c -w",
     "test-original": "ts-node test/test.ts",
     "test": "echo \"No test specified\"",
-    "pretest": "npm run build"
+    "pretest": "npm run build",
+    "sb": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "files": [
     "build"

@@ -6,6 +6,9 @@ import ts from "@wessberg/rollup-plugin-ts";
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import scss from 'rollup-plugin-scss'
+
 
 export default {
 	input: 'src/index.ts',
@@ -14,6 +17,8 @@ export default {
 		format: 'cjs',
 	},
 	plugins: [
+		peerDepsExternal(),
+		scss(),
 		ts({}),
 		typescript(),
 		commonjs({
