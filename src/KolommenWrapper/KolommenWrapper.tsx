@@ -1,13 +1,15 @@
 import React, { ReactNode } from "react";
 import Flex from "../Flex/Flex";
 import { SystemProps } from "../models/styledSystem.js";
+import { ThemeProvider } from "styled-components";
+import theme from "../styles/theme.js";
 
 interface Props extends SystemProps {
   children: ReactNode;
   fullWidth?: boolean;
   backgroundColor?: string | string[];
   debugging?: boolean;
-  outerColumns: string | string[];
+  outerColumns?: string | string[];
 }
 
 /**
@@ -33,6 +35,8 @@ const KolommenWrapper = ({ children,
   ],
   backgroundColor = "white",
   ...props } : Props) => (
+    <ThemeProvider theme={theme}>
+
     <Flex
       justifyContent="center"
       width="100%"
@@ -60,6 +64,7 @@ const KolommenWrapper = ({ children,
 
       </Flex>
     </Flex>
+    </ThemeProvider>
 );
 
 export default KolommenWrapper;
