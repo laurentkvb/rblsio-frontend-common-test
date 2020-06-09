@@ -2,7 +2,8 @@ import React, { ReactNode } from "react";
 import Flex from "../Flex/Flex";
 import { SystemProps } from "../models/styledSystem.js";
 import { ThemeProvider } from "styled-components";
-import theme from "../styles/theme.js";
+// @ts-ignore
+import theme from "../styles/theme"; // TODO: REMOVE THIS AND ADD ESLINTJS FOR RECOGNIZING OF FILES
 
 interface Props extends SystemProps {
   children: ReactNode;
