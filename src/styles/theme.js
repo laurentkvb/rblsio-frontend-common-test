@@ -32,7 +32,7 @@ const theme = {
     maxWidth: 1920,
     maxSectionWidth: 1344,
   },
-  breakpoints: ['320px', '480px', '720px', '1024px', '1440px', '1920px'],
+  breakpoints: ['0px', '320px', '480px', '720px', '1024px', '1440px', '1920px'],
 };
 
 
