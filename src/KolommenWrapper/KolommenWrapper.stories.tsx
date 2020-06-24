@@ -23,6 +23,16 @@ export const DefaultUsage = () =>
     <Box1 width="column12_6" backgroundColor="orange">
         <h2 color="white">Another one</h2>
     </Box1>
+
+        <Box1 width="column12_4" backgroundColor="blue">
+            <h2 color="white">Another one</h2>
+        </Box1>
+        <Box1 width="column12_4" backgroundColor="green">
+            <h2 color="white">Another one</h2>
+        </Box1>
+        <Box1 width="column12_4" backgroundColor="red">
+            <h2 color="white">Another one</h2>
+        </Box1>
     </Flex>
 
 </KolommenWrapper>;
